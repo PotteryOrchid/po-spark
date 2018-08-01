@@ -1,6 +1,6 @@
-package main.scala.com.po
+package com.po.study
 
-import com.po.anyref.Person
+import com.po.study.anyref.Person
 
 /**
   * Created by ZJ on 27/07/2018.

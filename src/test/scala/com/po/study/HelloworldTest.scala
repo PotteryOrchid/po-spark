@@ -1,6 +1,6 @@
-package com.po
+package com.po.study
 
-import main.scala.com.po.Helloworld
+import Helloworld
 import org.scalatest.FunSuite;
 /**
   * Created by ZJ on 27/07/2018.
