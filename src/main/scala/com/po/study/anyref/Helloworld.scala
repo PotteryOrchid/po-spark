@@ -1,6 +1,4 @@
-package com.po.study
-
-import com.po.study.anyref.Person
+package com.po.study.anyref
 
 /**
   * Created by ZJ on 27/07/2018.
