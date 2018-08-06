@@ -10,6 +10,26 @@ object MutilParms extends App {
     */
   val numbers = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
   val res = numbers.foldLeft(0)((m, n) => m + n)
+
+  // Print result
   println(res) // 55
-  println(numbers.foldLeft(10)((m, n) => m + n)) // 55
+
+  // Set init value
+  println(numbers.foldLeft(10)((m, n) => m + n)) // 65
+
+  // Scala type
+  println("res 3: " + numbers.foldLeft(10)(_ + _)) // 65
+
+
+  /**
+    * 定义一个新的函数，并预定义函数，函数实现未定义
+    */
+  // foldLeft参数 z 为空列表 List[Int]()，"_" 代表将要定义的函数
+  val numberFunc = numbers.foldLeft(List[Int]()) _
+  // xs 为上面传入的空列表，":+" 表示在列表尾部放入元素，"xs :+ x * x" 在列表尾部放入"x*x"
+  val squares = numberFunc((xs, x) => xs :+ x * x)
+  println(squares.toString()) // List(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+  val cubes = numberFunc((xs, x) => xs :+ x * x * x)
+  println(cubes.toString()) // List(1, 8, 27, 64, 125, 216, 343, 512, 729, 1000)
 }
