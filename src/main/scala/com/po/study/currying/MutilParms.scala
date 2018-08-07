@@ -32,4 +32,14 @@ object MutilParms extends App {
 
   val cubes = numberFunc((xs, x) => xs :+ x * x * x)
   println(cubes.toString()) // List(1, 8, 27, 64, 125, 216, 343, 512, 729, 1000)
+
+  /**
+    * 语法糖为方法的符号表示，可以理解为简便表达方式。
+    * foldLeft 方法语法糖 /:
+    * foldRight 方法语法糖 :\
+    */
+  val n = (2 /: numbers) (_ + _)
+  println(n)
+  val m = (numbers :\ 1) (_ + _)
+  println(m)
 }
