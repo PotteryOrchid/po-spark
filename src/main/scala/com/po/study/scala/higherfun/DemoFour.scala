@@ -1,4 +1,4 @@
-package com.po.study.higherfun
+package com.po.study.scala.higherfun
 
 /**
   * Created by ZJ on 02/08/2018.

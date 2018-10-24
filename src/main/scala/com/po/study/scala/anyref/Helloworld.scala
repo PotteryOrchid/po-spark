@@ -1,4 +1,4 @@
-package com.po.study.anyref
+package com.po.study.scala.anyref
 
 /**
   * Created by ZJ on 27/07/2018.

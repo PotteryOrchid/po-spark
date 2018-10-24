@@ -1,4 +1,4 @@
-package com.po.study.implicits
+package com.po.study.scala.implicits
 
 /**
   * When the compiler sees the need for an implicit, either because you are calling a method which does not exist on the object's class,

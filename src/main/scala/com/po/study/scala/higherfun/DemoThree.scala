@@ -1,4 +1,4 @@
-package com.po.study.higherfun
+package com.po.study.scala.higherfun
 
 /**
   * Functions that accept functions.

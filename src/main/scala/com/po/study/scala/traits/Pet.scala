@@ -1,4 +1,4 @@
-package com.po.study.traits
+package com.po.study.scala.traits
 
 import scala.collection.mutable.ArrayBuffer
 

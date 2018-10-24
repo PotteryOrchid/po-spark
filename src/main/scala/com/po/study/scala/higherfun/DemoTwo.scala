@@ -1,4 +1,4 @@
-package com.po.study.higherfun
+package com.po.study.scala.higherfun
 
 /**
   * Coercing methods into functions

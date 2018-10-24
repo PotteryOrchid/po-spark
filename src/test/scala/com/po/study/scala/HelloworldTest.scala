@@ -1,6 +1,6 @@
-package com.po.study
+package com.po.study.scala
 
-import com.po.study.anyref.Helloworld
+import com.po.study.scala.anyref.Helloworld
 import org.scalatest.FunSuite;
 /**
   * Created by ZJ on 27/07/2018.

@@ -1,4 +1,4 @@
-package com.po.study.nestmethod
+package com.po.study.scala.nestmethod
 
 /**
   * Nest method: 递归

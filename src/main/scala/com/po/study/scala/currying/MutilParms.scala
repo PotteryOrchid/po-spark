@@ -1,4 +1,4 @@
-package com.po.study.currying
+package com.po.study.scala.currying
 
 /**
   * Created by ZJ on 05/08/2018.
