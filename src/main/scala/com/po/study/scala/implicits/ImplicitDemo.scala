@@ -65,7 +65,7 @@ object ImplicitDemo extends App {
     * 3*(2^3) = 3*(2*2*2) = 24
     * 1、 "<< n" 代表左移 n 位，即 2 的 n 次方。
     * 2、"m << n" 代表 m 乘以 2 的 n 次方。
-    */
+    **/
   println(2 << 3)
 
 }

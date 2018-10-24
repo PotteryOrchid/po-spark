@@ -5,5 +5,6 @@ package com.po.study.scala.traits
   */
 trait Iterator[T] {
   def hasNext: Boolean
+
   def next(): T
 }
