@@ -1,21 +1,26 @@
 package com.po.study.scala.anyref
 
 /**
+  * main method can only be declared in object, not can be in class.
   * Created by ZJ on 27/07/2018.
   */
-object Helloworld extends App {
+object Helloworld {
 
   def square(x: Int): Int = x * x
 
-  square(2)
+  def main(args: Array[String]): Unit = {
 
-  val person = new Person(name = "Book")
+    square(2)
 
-  person.name = "Book" // 可变构造函数
-  person.setNumber_=(-1) // 特殊setter方法
-  person.cmnt = "hello1" // 公有属性
+    val person = new Person(name = "Book")
 
-  person.say()
+    person.name = "Book" // 可变构造函数
+    person.setNumber_=(-1) // 特殊setter方法
+    person.cmnt = "hello1" // 公有属性
 
-  println(person.name + person.gender + person.cmnt)
+    person.say()
+
+    println(person.name + person.gender + person.cmnt)
+  }
+
 }
