@@ -111,4 +111,6 @@ object Basics extends App {
   val n2 = IdFactory.create()
   println(n1, " and ", n2)
 
+  val geeterTraitDefaultImpl = new GeeterTraitDefaultImpl()
+  geeterTraitDefaultImpl.geet("kitty")
 }
