@@ -11,6 +11,7 @@
   <properties>
     <spark.version>2.3.2</spark.version>
     <scalatest.version>2.2.6</scalatest.version>
+    <jackson-module-scala.version>2.9.7</jackson-module-scala.version>
   </properties>
 
   <dependencies>
@@ -45,6 +46,13 @@
       <artifactId>scalatest_2.11</artifactId>
       <version>${scalatest.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <!-- jackson-module-scala -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-scala_2.12</artifactId>
+      <version>${jackson-module-scala.version}</version>
     </dependency>
   </dependencies>
 </project>
