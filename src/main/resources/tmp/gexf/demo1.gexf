@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+	<graph mode="static" defaultedgetype="directed">
+		<nodes>
+			<node id="4" label="Diane" />
+			<node id="1" label="Anna" />
+			<node id="3" label="Charles" />
+			<node id="5" label="Went to gym this morning" />
+			<node id="2" label="Bill" />
+		</nodes>
+		<edges>
+			<edge source="1" target="2" label="is-friends-with" />
+			<edge source="2" target="3" label="is-friends-with" />
+			<edge source="3" target="4" label="is-friends-with" />
+			<edge source="3" target="5" label="Wrote-status" />
+			<edge source="4" target="5" label="Likes-status" />
+		</edges>
+	</graph>
+</gexf>
