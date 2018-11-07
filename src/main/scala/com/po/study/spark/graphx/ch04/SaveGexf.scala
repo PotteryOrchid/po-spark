@@ -33,8 +33,13 @@ object SaveGexf extends App {
   val pw3 = new PrintWriter("src/main/resources/tmp/gexf/demo4.gexf")
   val graph3 = GraphGenerators.logNormalGraph(InitGraph.sc, 20)
   pw3.write(toGexf(graph3))
-  println(graph3.aggregateMessages[Int](_.sendToSrc(1), _ + _).map(_._2).collect().sorted)
+  graph3.aggregateMessages[Int](_.sendToSrc(1), _ + _).map(_._2).collect().sorted.foreach(println)
   pw3.close()
 
-  //
+  // generate r mat graph
+  val pw4 = new PrintWriter("src/main/resources/tmp/gexf/demo5.gexf")
+  val graph4 = GraphGenerators.rmatGraph(InitGraph.sc, 32, 56)
+  pw4.write(toGexf(graph4))
+  graph4.aggregateMessages[Int](_.sendToSrc(1), _ + _).map(_._2).collect.foreach(println)
+  pw4.close()
 }
