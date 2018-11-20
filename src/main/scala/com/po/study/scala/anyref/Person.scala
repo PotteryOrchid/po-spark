@@ -31,3 +31,5 @@ object Person {
   var per = new Person();
   per.cmnt = "hello"
 }
+
+class Demo()
