@@ -75,7 +75,7 @@ object EnvProperties {
       env.put(entry(0), new EnvEntry(null, entry(1)))
     } else {
       val v = new mutable.StringBuilder()
-      for (i <- 1 until entry.length - 1) {
+      for (i <- 1 until entry.length) {
         v.append(entry(i))
         if (i != entry.length - 1) v.append(":")
       }
